@@ -1,0 +1,16 @@
+.project {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+
+  &:nth-child(even) {
+    justify-content: flex-start;
+    margin-left: 2rem;
+  }
+
+  &__gif {
+    height: auto;
+    width: 80%;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../color.scss";
+
+.projects {
+  width: 100%;
+  padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header-text {
+    text-align: center;
+  }
+
+  & span {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: $color-dark;
+  }
+
+  & p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: lighten($color-dark, 20%);
+    line-height: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  &__gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+    justify-content: center;
+  }
+}
