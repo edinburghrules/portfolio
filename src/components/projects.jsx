@@ -13,9 +13,6 @@ const Projects = () => {
       </div>
       <div className="projects__gallery">
         <Project />
-        <Project />
-        <Project />
-        <Project />
       </div>
     </div>
   );
