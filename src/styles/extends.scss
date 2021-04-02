@@ -1,0 +1,18 @@
+@import "./color.scss";
+
+.btn {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.btn-light {
+  @extend .btn;
+  border: 1px solid lighten($color-dark, 80%);
+  background-color: #fff;
+}
+
+.btn-dark {
+  @extend .btn;
+  background-color: $color-dark;
+  color: #fff;
+}

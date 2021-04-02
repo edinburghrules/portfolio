@@ -12,7 +12,7 @@ const Navbar = () => {
       </div>
       <div className="navbar__links">
         <a className="navbar__link" href="#">
-          Work
+          Projects
         </a>
         <a href="#">Resume</a>
         <a href="#">Contact</a>
@@ -22,19 +22,19 @@ const Navbar = () => {
           className="navbar__social-link"
           href="https://github.com/edinburghrules"
         >
-          <img src={githubIcon} />
+          <img src={githubIcon} alt="github" />
         </a>
         <a
           className="navbar__social-link"
           href="https://www.linkedin.com/in/sean-adamson-4883a1173/"
         >
-          <img src={linkedinIcon} />
+          <img src={linkedinIcon} alt="linkedin" />
         </a>
         <a
           className="navbar__social-link"
           href="https://codepen.io/edinburghrules"
         >
-          <img src={codepenIcon} />
+          <img src={codepenIcon} alt="codepen" />
         </a>
       </div>
     </div>

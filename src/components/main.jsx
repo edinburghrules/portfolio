@@ -14,7 +14,7 @@ const Main = () => {
         <img
           className="main__portrait-img"
           src={portrait}
-          alt="photo sean james adamson"
+          alt="portrait of sean james adamson"
         />
       </div>
       <div className="main__column-right">
@@ -31,22 +31,31 @@ const Main = () => {
           <p>Some of the tech I am comfortable using:</p>
           <ul>
             <li>
-              Javascript <img className="main__tech-icon" src={jsIcon} />
+              Javascript{" "}
+              <img className="main__tech-icon" src={jsIcon} alt="javascript" />
             </li>
             <li>
-              React <img className="main__tech-icon" src={reactIcon} />
+              React{" "}
+              <img className="main__tech-icon" src={reactIcon} alt="react" />
             </li>
             <li>
-              Redux <img className="main__tech-icon" src={reduxIcon} />
+              Redux{" "}
+              <img className="main__tech-icon" src={reduxIcon} alt="redux" />
             </li>
             <li>
-              Sass <img className="main__tech-icon" src={sassIcon} />
+              Sass <img className="main__tech-icon" src={sassIcon} alt="sass" />
             </li>
             <li>
-              Firebase <img className="main__tech-icon" src={firebaseIcon} />
+              Firebase{" "}
+              <img
+                className="main__tech-icon"
+                src={firebaseIcon}
+                alt="firebase"
+              />
             </li>
             <li>
-              Figma <img className="main__tech-icon" src={figmaIcon} />
+              Figma{" "}
+              <img className="main__tech-icon" src={figmaIcon} alt="figma" />
             </li>
           </ul>
           <div className="main__btns">

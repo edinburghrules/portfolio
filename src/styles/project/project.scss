@@ -1,16 +1,81 @@
+@import "../extends.scss";
+@import "../color.scss";
+@import "../font.scss";
+
 .project {
   margin-top: 2rem;
   display: flex;
-  justify-content: flex-end;
   margin-right: 2rem;
+  box-shadow: 0px 3px 12px 1px #ccc;
+  background-color: #fff;
 
-  &:nth-child(even) {
-    justify-content: flex-start;
-    margin-left: 2rem;
+  &__info {
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 600;
   }
 
   &__gif {
     height: auto;
-    width: 80%;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  &__list {
+    font-size: 12px;
+
+    & ul {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    & li {
+      list-style: none;
+      margin-right: 6px;
+      background-color: #f2f2f2;
+      color: $color-lightest;
+      padding: 4px 8px;
+      border-radius: 10px;
+    }
+  }
+
+  &__plug {
+    font-size: 13px;
+    line-height: 1.2rem;
+    color: $color-lightest;
+    font-weight: $weight-light;
+  }
+
+  &__btns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 2rem;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: $weight-light;
+
+    &--preview {
+      @extend .btn-dark;
+      border: transparent;
+    }
+
+    &--github {
+      @extend .btn-light;
+    }
+  }
+
+  &__btn-img {
+    width: 1rem;
+    margin-right: 4px;
   }
 }
