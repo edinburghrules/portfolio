@@ -1,13 +1,42 @@
+import { useEffect } from "react";
 import "../styles/project/project.scss";
 import previewIcon from "../assets/preview.svg";
 import githubIcon from "../assets/github-icon.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Project = ({
   projectData: { title, techUsed, link, github, plug, gif },
+  index,
 }) => {
-  console.log(title, gif);
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.6 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="project">
+    <motion.div
+      ref={ref}
+      custom={index}
+      variants={{
+        hidden: () => ({
+          opacity: 0,
+          y: 5,
+        }),
+        visible: () => ({
+          opacity: 1,
+          y: 0,
+          transition: { delay: index * 0.5 },
+        }),
+      }}
+      initial="hidden"
+      animate={controls}
+      className="project"
+    >
       <div className="project__content">
         <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="project__gif" src={gif} alt={title} />
@@ -50,7 +79,7 @@ const Project = ({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

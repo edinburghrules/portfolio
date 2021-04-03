@@ -1,5 +1,6 @@
 import "../styles/main/main.scss";
-import portrait from "../assets/portrait.svg";
+import { motion } from "framer-motion";
+import portrait from "../assets/portrait.png";
 import jsIcon from "../assets/js-icon.png";
 import reactIcon from "../assets/react-icon.png";
 import reduxIcon from "../assets/redux-icon.png";
@@ -9,7 +10,12 @@ import figmaIcon from "../assets/figma-icon.png";
 
 const Main = () => {
   return (
-    <div className="main">
+    <motion.div
+      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 5 }}
+      transition={{ duration: 0.5 }}
+      className="main"
+    >
       <div className="main__column-left">
         <img
           className="main__portrait-img"
@@ -64,7 +70,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
