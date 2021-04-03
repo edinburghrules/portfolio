@@ -15,7 +15,7 @@ const Projects = () => {
     }
   }, [controls, inView]);
   return (
-    <motion.div
+    <motion.section
       ref={ref}
       variants={{
         visible: {
@@ -44,7 +44,7 @@ const Projects = () => {
           <Project key={index} index={index} projectData={projectData} />
         ))}
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

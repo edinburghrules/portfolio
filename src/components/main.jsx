@@ -1,29 +1,50 @@
 import "../styles/main/main.scss";
 import { motion } from "framer-motion";
-import portrait from "../assets/portrait.png";
 import jsIcon from "../assets/js-icon.png";
 import reactIcon from "../assets/react-icon.png";
 import reduxIcon from "../assets/redux-icon.png";
 import sassIcon from "../assets/sass-icon.svg";
 import firebaseIcon from "../assets/firebase-icon.png";
 import figmaIcon from "../assets/figma-icon.png";
+import githubIcon from "../assets/github-icon.png";
+import linkedinIcon from "../assets/linkedin-icon.png";
+import codepenIcon from "../assets/codepen-icon.png";
 
 const Main = () => {
   return (
-    <motion.div
+    <motion.section
       animate={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 5 }}
       transition={{ duration: 0.5 }}
       className="main"
     >
-      <div className="main__column-left">
-        <img
-          className="main__portrait-img"
-          src={portrait}
-          alt="portrait of sean james adamson"
-        />
-      </div>
-      <div className="main__column-right">
+      <div>
+        <div className="main__social-links">
+          <a
+            className="navbar__social-link"
+            href="https://github.com/edinburghrules"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={githubIcon} alt="github" />
+          </a>
+          <a
+            className="navbar__social-link"
+            href="https://www.linkedin.com/in/sean-adamson-4883a1173/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={linkedinIcon} alt="linkedin" />
+          </a>
+          <a
+            className="navbar__social-link"
+            href="https://codepen.io/edinburghrules"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={codepenIcon} alt="codepen" />
+          </a>
+        </div>
         <div className="main__header-text">
           <h1>
             Hi, I'm Sean and I'm a <br />
@@ -66,11 +87,11 @@ const Main = () => {
           </ul>
           <div className="main__btns">
             <button className="main__btn main__btn--contact">Contact me</button>
-            <button className="main__btn">Check out my work</button>
+            <button className="main__btn">Projects</button>
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 };
 

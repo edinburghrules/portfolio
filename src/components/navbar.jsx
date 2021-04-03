@@ -21,18 +21,24 @@ const Navbar = () => {
         <a
           className="navbar__social-link"
           href="https://github.com/edinburghrules"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={githubIcon} alt="github" />
         </a>
         <a
           className="navbar__social-link"
           href="https://www.linkedin.com/in/sean-adamson-4883a1173/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={linkedinIcon} alt="linkedin" />
         </a>
         <a
           className="navbar__social-link"
           href="https://codepen.io/edinburghrules"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src={codepenIcon} alt="codepen" />
         </a>

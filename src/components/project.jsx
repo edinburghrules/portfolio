@@ -30,7 +30,7 @@ const Project = ({
         visible: () => ({
           opacity: 1,
           y: 0,
-          transition: { delay: index * 0.5 },
+          transition: { delay: (index + 1) * 0.5 },
         }),
       }}
       initial="hidden"
