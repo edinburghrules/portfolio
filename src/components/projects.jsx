@@ -3,13 +3,12 @@ import projectsData from "../projects-data";
 import Project from "./project";
 
 const Projects = () => {
-  console.log(projectsData);
   return (
     <div className="projects">
       <div className="projects__header">
         <span className="projects__header-title">Projects</span>
         <p className="projects__header-p">
-          Check out the projects I have created. If you have any questions, feel
+          Check out the projects I have built. If you have any questions, feel
           free to ask.
         </p>
       </div>

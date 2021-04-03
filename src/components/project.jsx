@@ -9,7 +9,7 @@ const Project = ({
   return (
     <div className="project">
       <div className="project__content">
-        <a href={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <img className="project__gif" src={gif} alt={title} />
         </a>
         <div className="project__info">
@@ -25,7 +25,12 @@ const Project = ({
             <p dangerouslySetInnerHTML={{ __html: plug }}></p>
           </div>
           <div className="project__btns">
-            <a href={link} className="project__btn project__btn--preview">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn project__btn--preview"
+            >
               <img
                 className="project__btn-img"
                 src={previewIcon}
@@ -33,7 +38,12 @@ const Project = ({
               />
               Preview
             </a>
-            <a href={github} className="project__btn project__btn--github">
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project__btn project__btn--github"
+            >
               <img className="project__btn-img" src={githubIcon} alt="github" />
               Github repo
             </a>

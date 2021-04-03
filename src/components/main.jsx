@@ -21,14 +21,14 @@ const Main = () => {
         <div className="main__header-text">
           <h1>
             Hi, I'm Sean and I'm a <br />
-            <span>Junior Front End Developer</span>.
+            <span>Front End Developer</span>.
           </h1>
           <p>
-            I'm Junior Front End Developer based in Dundee, Scotland. I have a
-            degree in Web Development and Design and I have one year of
-            experience creating web applications.
+            I'm a Front End Developer based in Dundee, Scotland. I have a degree
+            in Web Development and Design and I have one year of experience
+            creating web applications.
           </p>
-          <p>Some of the tech I am comfortable using:</p>
+          <p>Some of the tech I am proficient with</p>
           <ul>
             <li>
               Javascript{" "}
