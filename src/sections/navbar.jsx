@@ -14,7 +14,6 @@ const Navbar = () => {
         <a className="navbar__link" href="#projects">
           Projects
         </a>
-        <a href="#">Resume</a>
         <a href="#contact">Contact</a>
       </div>
       <div className="navbar__social-links">

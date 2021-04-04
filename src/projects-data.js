@@ -24,7 +24,7 @@ const projectsData = [
   {
     title: "Todos",
     techUsed: ["React", "Sass"],
-    link: "https://devents-e8874.firebaseapp.com/",
+    link: "https://todos-app-eefb5.firebaseapp.com/",
     github: "https://github.com/edinburghrules/React-todolist",
     plug: `<p>Todo app built with React and CSS. Saves and gets todos to local storage. Add todos, edit todos, mark todos as completed, hide/show completed todos and  delete all or selected todos.</p>
       <p>Fully responsive for mobile devices.</p>`,
