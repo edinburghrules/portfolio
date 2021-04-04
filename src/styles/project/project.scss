@@ -79,6 +79,7 @@
 
     &--github {
       @extend .btn-light;
+      color: $color-dark;
     }
   }
 

@@ -1,5 +1,17 @@
 @import "./color.scss";
 
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .btn {
   padding: 1rem 2rem;
   cursor: pointer;
@@ -15,4 +27,20 @@
   @extend .btn;
   background-color: $color-dark;
   color: #fff;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #fff;
+  background-color: $color-dark;
+  padding: 3px;
+}
+
+.section-p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: $color-dark;
+  line-height: 1.6rem;
+  margin-top: 1rem;
 }

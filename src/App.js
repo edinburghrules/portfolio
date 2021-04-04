@@ -1,16 +1,16 @@
 import "./styles/app.scss";
-import Navbar from "./components/navbar";
-import Main from "./components/main";
-import Projects from "./components/projects";
+import Navbar from "./sections/navbar";
+import Main from "./sections/main";
+import Projects from "./sections/projects";
+import Contact from "./sections/contact";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="content">
-        <Main />
-        <Projects />
-      </div>
+      <Main />
+      <Projects />
+      <Contact />
     </div>
   );
 }

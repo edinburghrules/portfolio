@@ -4,9 +4,15 @@
 .navbar {
   color: $color-dark;
   padding: 1rem;
+  padding-bottom: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
 
   &__logo {
     width: 25%;
@@ -32,7 +38,7 @@
       color: $color-dark;
       text-decoration: none;
       margin-right: 1rem;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 14px;
       letter-spacing: 1px;
     }

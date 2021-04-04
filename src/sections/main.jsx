@@ -53,7 +53,7 @@ const Main = () => {
           <p>
             I'm a Front End Developer based in Dundee, Scotland. I have a degree
             in Web Development and Design and I have one year of experience
-            creating web applications.
+            building web applications.
           </p>
           <p>Some of the tech I am proficient with</p>
           <ul>
@@ -86,8 +86,9 @@ const Main = () => {
             </li>
           </ul>
           <div className="main__btns">
-            <button className="main__btn main__btn--contact">Contact me</button>
-            <button className="main__btn">Projects</button>
+            <a className="main__btn main__btn--contact" href="#contact">
+              Contact me
+            </a>
           </div>
         </div>
       </div>

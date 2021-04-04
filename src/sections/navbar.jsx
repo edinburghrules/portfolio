@@ -11,11 +11,11 @@ const Navbar = () => {
         <img src={logo} alt="site logo" />
       </div>
       <div className="navbar__links">
-        <a className="navbar__link" href="#">
+        <a className="navbar__link" href="#projects">
           Projects
         </a>
         <a href="#">Resume</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </div>
       <div className="navbar__social-links">
         <a

@@ -5,7 +5,7 @@ import todosGif from "./assets/todos.gif";
 const projectsData = [
   {
     title: "Apparel E-Commerce",
-    techUsed: ["React", "Redux", "Firebase", "Sass"],
+    techUsed: ["React", "Redux", "Firebase", "Sass", "Stripe API"],
     link: "https://e-commerce-app-9b649.firebaseapp.com/",
     github: "https://github.com/edinburghrules/ecommerce-app",
     plug: `<p>E-commerce app made with React, Redux & Firebase. View products by category, filter and sort, add products to favourites list, add, edit and remove products in cart and checkout with Stripe API.</p>
@@ -26,7 +26,7 @@ const projectsData = [
     techUsed: ["React", "Sass"],
     link: "https://devents-e8874.firebaseapp.com/",
     github: "https://github.com/edinburghrules/React-todolist",
-    plug: `<p>Todo app made with React and CSS. Saves todos to local storage. Add todos, edit todos, mark todos as completed and hide/show them, delete all or selected todos.</p>
+    plug: `<p>Todo app built with React and CSS. Saves and gets todos to local storage. Add todos, edit todos, mark todos as completed, hide/show completed todos and  delete all or selected todos.</p>
       <p>Fully responsive for mobile devices.</p>`,
     gif: todosGif,
   },
