@@ -20,43 +20,43 @@ const Main = () => {
       className="main"
     >
       <div>
-        <div className="main__social-links">
-          <a
-            className="navbar__social-link"
-            href="https://github.com/edinburghrules"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={githubIcon} alt="github" />
-          </a>
-          <a
-            className="navbar__social-link"
-            href="https://www.linkedin.com/in/sean-adamson-4883a1173/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedinIcon} alt="linkedin" />
-          </a>
-          <a
-            className="navbar__social-link"
-            href="https://codepen.io/edinburghrules"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={codepenIcon} alt="codepen" />
-          </a>
-        </div>
         <div className="main__header-text">
           <h1>
             Hi, I'm Sean and I'm a<span> Front End Developer</span>
           </h1>
+          <div className="main__social-links">
+            <a
+              className="navbar__social-link"
+              href="https://github.com/edinburghrules"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={githubIcon} alt="github" />
+            </a>
+            <a
+              className="navbar__social-link"
+              href="https://www.linkedin.com/in/sean-adamson-4883a1173/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={linkedinIcon} alt="linkedin" />
+            </a>
+            <a
+              className="navbar__social-link"
+              href="https://codepen.io/edinburghrules"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={codepenIcon} alt="codepen" />
+            </a>
+          </div>
           <p>
             I'm a Front End Developer with a degree in Web Development and
             Design and experience building web applications. I have a strong
             sense of visual design and understand the importance of good UX and
             UI practices.
           </p>
-          <p>Some of the tech I am proficient with :</p>
+          <p>Some of the tech I am proficient with</p>
           <ul>
             <li>
               Javascript{" "}

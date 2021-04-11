@@ -16,12 +16,13 @@
 
     @media (max-width: 600px) {
       display: flex;
+      margin-top: 1rem;
       margin-bottom: 1.4rem;
     }
   }
 
   &__tech-icon {
-    height: 1.4rem;
+    height: 1.6rem;
     margin-left: 8px;
   }
 
@@ -30,30 +31,38 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 70%;
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+
+    @media (max-width: 414px) {
+      width: 100%;
+    }
   }
 
   & h1 {
     color: $color-dark;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     line-height: 3rem;
     margin-top: 0;
     margin-bottom: 1rem;
 
     @media (max-width: 414px) {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
     }
   }
 
   & p {
-    width: 60%;
     font-weight: $weight-light;
     font-size: 1.1rem;
     color: $color-light;
     line-height: 1.8rem;
     margin: 5px 0;
 
-    @media (max-width: 768px) {
-      width: 100%;
+    @media (max-width: 414px) {
+      font-size: 1rem;
     }
   }
 
@@ -62,11 +71,6 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
-    width: 50%;
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
   }
 
   & li {
