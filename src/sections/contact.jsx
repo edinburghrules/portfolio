@@ -14,7 +14,7 @@ const Contact = () => {
         <form
           id="contact"
           className="contact__form"
-          action="https://formsubmit.co/your@email.com"
+          action="https://formsubmit.co/73e25acd852b09f512529ce5b7e395ee"
           method="POST"
         >
           <input

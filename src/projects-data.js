@@ -11,6 +11,11 @@ const projectsData = [
     plug: `<p>E-commerce app made with React, Redux & Firebase. View products by category, filter and sort, add products to favourites list, add, edit and remove products in cart and checkout with Stripe API.</p>
       <p>Fully responsive for mobile devices.</p>`,
     gif: apparelGif,
+    bgColors: {
+      light: "#A556F7",
+      dark: "#875EF4",
+      btn: "#7540D6",
+    },
   },
   {
     title: "Devents",
@@ -20,6 +25,11 @@ const projectsData = [
     plug: `<p>Meetup style app made with React, Redux & Firebase. Attend, host, edit and cancel events. Messenger feature allows attendees to chat and for the host to communicate any changes or updates.</p>
       <p>Fully responsive for mobile devices.</p>`,
     gif: deventsGif,
+    bgColors: {
+      light: "#ED4896",
+      dark: "#F23F63",
+      btn: "#BD2D60",
+    },
   },
   {
     title: "Todos",
@@ -29,6 +39,11 @@ const projectsData = [
     plug: `<p>Todo app built with React and CSS. Saves and gets todos to local storage. Add todos, edit todos, mark todos as completed, hide/show completed todos and  delete all or selected todos.</p>
       <p>Fully responsive for mobile devices.</p>`,
     gif: todosGif,
+    bgColors: {
+      light: "#FAC815",
+      dark: "#F87314",
+      btn: "#BB7215",
+    },
   },
 ];
 

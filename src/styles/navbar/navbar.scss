@@ -3,7 +3,7 @@
 
 .navbar {
   padding: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -13,6 +13,11 @@
   width: 100%;
   background-color: #fff;
 
+  @media (max-width: 414px) {
+    padding: 5px;
+    padding-bottom: 1rem;
+  }
+
   &__logo {
     width: 25%;
     display: flex;
@@ -21,6 +26,7 @@
     & img {
       height: auto;
       width: 35px;
+      border-radius: 15%;
     }
   }
 
@@ -29,12 +35,16 @@
     display: flex;
     justify-content: center;
 
+    @media (max-width: 414px) {
+      justify-content: flex-end;
+    }
+
     @media (min-width: 600px) {
       width: 75%;
     }
 
     & a {
-      color: $color-dark;
+      color: $color-light;
       text-decoration: none;
       margin-right: 1rem;
       font-weight: 600;

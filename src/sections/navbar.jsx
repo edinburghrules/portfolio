@@ -1,15 +1,15 @@
 import "../styles/navbar/navbar.scss";
-import githubIcon from "../assets/github-icon.png";
-import linkedinIcon from "../assets/linkedin-icon.png";
-import codepenIcon from "../assets/codepen-icon.png";
+import githubIcon from "../assets/github-icon.svg";
+import linkedinIcon from "../assets/linkedin-icon.svg";
+import codepenIcon from "../assets/codepen-icon.svg";
 import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="navbar__logo">
+      <a href="#main" className="navbar__logo">
         <img src={logo} alt="site logo" />
-      </div>
+      </a>
       <div className="navbar__links">
         <a className="navbar__link" href="#projects">
           Projects

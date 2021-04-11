@@ -4,8 +4,8 @@
 
 .project {
   margin-top: 1rem;
-  background-color: #fff;
-  box-shadow: 0px 3px 12px 1px #ccc;
+  border-radius: 18px;
+  color: #fff;
 
   & a {
     display: flex;
@@ -18,7 +18,8 @@
 
   &__title {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: $weight-bold;
+    text-shadow: 1px 1px 20px $color-light;
   }
 
   &__gif {
@@ -26,10 +27,7 @@
     width: 100%;
     padding: 1rem;
     align-self: center;
-
-    @media (max-width: 500px) {
-      width: 90%;
-    }
+    border-radius: 28px;
   }
 
   &__list {
@@ -44,8 +42,9 @@
     & li {
       list-style: none;
       margin-right: 6px;
-      background-color: #f2f2f2;
-      color: $color-lightest;
+      margin-bottom: 8px;
+      background-color: #fff;
+      color: $color-light;
       padding: 4px 8px;
       border-radius: 10px;
     }
@@ -54,8 +53,9 @@
   &__plug {
     font-size: 13px;
     line-height: 1.2rem;
-    color: $color-lightest;
+    color: #fff;
     font-weight: $weight-light;
+    text-shadow: 1px 1px 20px $color-light;
   }
 
   &__btns {

@@ -6,7 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Project = ({
-  projectData: { title, techUsed, link, github, plug, gif },
+  projectData: { title, techUsed, link, github, plug, gif, bgColors },
   index,
 }) => {
   const controls = useAnimation();
@@ -36,6 +36,9 @@ const Project = ({
       initial="hidden"
       animate={controls}
       className="project"
+      style={{
+        background: `linear-gradient(${bgColors.light}, ${bgColors.dark})`,
+      }}
     >
       <div className="project__content">
         <a href={link} target="_blank" rel="noopener noreferrer">
@@ -45,8 +48,8 @@ const Project = ({
           <span className="project__title">{title}</span>
           <div className="project__list">
             <ul>
-              {techUsed.map((tech) => (
-                <li>{tech}</li>
+              {techUsed.map((tech, index) => (
+                <li key={index}>{tech}</li>
               ))}
             </ul>
           </div>
@@ -55,6 +58,7 @@ const Project = ({
           </div>
           <div className="project__btns">
             <a
+              style={{ backgroundColor: `${bgColors.btn}` }}
               href={link}
               target="_blank"
               rel="noopener noreferrer"

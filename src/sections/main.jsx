@@ -13,6 +13,7 @@ import codepenIcon from "../assets/codepen-icon.png";
 const Main = () => {
   return (
     <motion.section
+      id="main"
       animate={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 5 }}
       transition={{ duration: 0.5 }}
@@ -47,15 +48,15 @@ const Main = () => {
         </div>
         <div className="main__header-text">
           <h1>
-            Hi, I'm Sean and I'm a <br />
-            <span>Front End Developer</span>.
+            Hi, I'm Sean and I'm a<span> Front End Developer</span>
           </h1>
           <p>
-            I'm a Front End Developer based in Dundee, Scotland. I have a degree
-            in Web Development and Design and I have one year of experience
-            building web applications.
+            I'm a Front End Developer with a degree in Web Development and
+            Design and experience building web applications. I have a strong
+            sense of visual design and understand the importance of good UX and
+            UI practices.
           </p>
-          <p>Some of the tech I am proficient with</p>
+          <p>Some of the tech I am proficient with :</p>
           <ul>
             <li>
               Javascript{" "}

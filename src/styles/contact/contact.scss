@@ -1,9 +1,15 @@
 @import "../extends.scss";
 @import "../color.scss";
+@import "../font.scss";
 
 .contact {
   @extend .section;
-  background-color: #222;
+  background-color: $color-dark;
+
+  @media (max-width: 414px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   &__header {
     text-align: center;
@@ -11,12 +17,12 @@
 
   &__header-title {
     @extend .section-title;
-    color: #d0d0d0;
+    color: #fff;
   }
 
   &__header-p {
     @extend .section-p;
-    color: #d0d0d0;
+    color: #fff;
   }
 
   &__content {
@@ -48,9 +54,10 @@
     margin-bottom: 1rem;
     padding-left: 10px;
     font-size: 1rem;
+    border-radius: 8px;
 
     &::placeholder {
-      color: $color-dark;
+      color: $color-lightest;
     }
 
     &:focus,
@@ -67,9 +74,10 @@
     padding-top: 12px;
     font-size: 1rem;
     font-family: inherit;
+    border-radius: 8px;
 
     &::placeholder {
-      color: $color-dark;
+      color: $color-lightest;
     }
 
     &:focus,
@@ -80,14 +88,15 @@
 
   & button {
     @extend .btn;
+    font-family: $Poppins;
     font-weight: 600;
     font-size: 1rem;
     margin-top: 1rem;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-radius: 0;
     border: none;
-    background-color: #d0d0d0;
+    color: $color-dark;
+    background-color: #fff;
 
     &:active,
     &:focus {
