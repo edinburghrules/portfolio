@@ -10,7 +10,7 @@ const Project = ({
   index,
 }) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.6 });
+  const [ref, inView] = useInView({ threshold: 0.2 });
 
   useEffect(() => {
     if (inView) {
@@ -30,7 +30,7 @@ const Project = ({
         visible: () => ({
           opacity: 1,
           y: 0,
-          transition: { delay: (index + 1) * 0.5 },
+          transition: { delay: (index + 1) * 0.25 },
         }),
       }}
       initial="hidden"

@@ -5,6 +5,7 @@
 .contact {
   @extend .section;
   background-color: $color-dark;
+  max-width: 1168px;
 
   @media (max-width: 414px) {
     padding-top: 4rem;
